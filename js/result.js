@@ -11,7 +11,7 @@
           url: "http://192.168.1.70:3000/api/v1/suggests",
           type: 'GET',
           success: function(data) {
-            console.log(data, 'data');
+            //console.log(data, 'donnees');
             form.display(data);
           },
           error: function(data) {
@@ -37,9 +37,8 @@
       },
 
       display : function(data){
-        console.log('data', data);
         for (var key in data.result) {
-          console.log(data.result[key], 'value');
+          console.log(data.result[key].doc);
         }
         /*   for (var memberKey in json.table[key].member) {
 
@@ -53,7 +52,6 @@
     }*/
   }
 }
-console.log(form);
 form.get();
 };
 document.getElementsByTagName("head")[0].appendChild(script);
