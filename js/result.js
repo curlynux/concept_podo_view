@@ -38,7 +38,7 @@
 
       display : function(data){
         for (var key in data.result) {
-          console.log(data.result[key].doc);
+          console.log(data.result[key].doc['Cambrure']);
         }
         /*   for (var memberKey in json.table[key].member) {
 
