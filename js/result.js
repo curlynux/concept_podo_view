@@ -11,7 +11,6 @@
           url: "http://192.168.1.70:3000/api/v1/suggests",
           type: 'GET',
           success: function(data) {
-            //console.log(data, 'donnees');
             form.display(data);
           },
           error: function(data) {
@@ -37,22 +36,18 @@
       },
 
       display : function(data){
-        for (var key in data.result) {
-          console.log(data.result[key].doc['Cambrure']);
-        }
-        /*   for (var memberKey in json.table[key].member) {
+        var valeur = data.result
+        for (var key in valeur) {
+          for (var item in valeur[key].doc) {
+            console.log(item, '=', valeur[key].doc[item]);
 
-        var table = json.table[key].number;
-        this.CreateTable(json.table[key]);
-        if (json.table[key].member[memberKey].nom) {
-        var users = json.table[key].member[memberKey].nom;
-        var userId = json.table[key].member[memberKey].id;
-        this.pushUsersToTab(users, table, userId)
+            $('#res td').text(valeur[key].doc[item]);
+            // console.log(td);
+          }
+        }
       }
-    }*/
-  }
-}
-form.get();
-};
-document.getElementsByTagName("head")[0].appendChild(script);
+    }
+    form.get();
+  };
+  document.getElementsByTagName("head")[0].appendChild(script);
 })();
