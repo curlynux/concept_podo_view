@@ -1,4 +1,4 @@
-var value = [
+var valeur = [
   'Table FORME',
     "Longueur de la chaussure (numérique, en cm)",
     "Largeur des flancs (au sol) (numérique, en cm)",
