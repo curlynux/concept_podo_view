@@ -1,193 +1,173 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Yomeva</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-
+    <title>Yomeva</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
- <div class="container center">
-	<div class="row">
-		<h2 class="text-center">Table FORME</h2>
-		<div class="table-responsive">
-			<table class="table text-center table-bordered table-hover">
-			<thead>
-			  <tr>
-				<th>nom mesure</th>
-				<th>1</th>
-				<th>2</th>
-				<th>3</th>
-        <th>4</th>
-        <th>5</th>
-        <th>6</th>
-        <th>7</th>
-        <th>8</th>
-        <th>9</th>
-			  </tr>
-			</thead>
-			<tbody>
-			  <tr>
-					<label type="text" value="cm"/>
-				</td>
-			  </tr>
-			  <tr>
-				<td>
-
-					<label for="cm">cm</label>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-				</td>
-			  </tr>
-			  <tr>
-
-				<td>
-
-					<label for="cm">nom, prenom, N</label>
-				</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-			  </tr>
-        <tr>
-
-        <td>
-
-          <label for="cm">nom, prenom, N</label>
-        </td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        </tr>
-        <tr>
-
-        <td>
-
-          <label for="cm">nom, prenom, N</label>
-        </td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        </tr>
-			</tbody>
-		  </table>
-
-
-</div>
 
 <body>
+    <div class="container-fluid">
+        <h2 class="text-center">Table FORME</h2>
+        <div class="table-responsive">
+            <table id="table" class="table text-center table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th scope="row">nom mesure</th>
+                        <th scope="row">shoeLong</th>
+                        <th scope="row">shoeWidth</th>
+                        <th scope="row">flankLineTurn</th>
+                        <th scope="row">kickTurn</th>
+                        <th scope="row">entry</th>
+                        <th scope="row">height_10</th>
+                        <th scope="row">Cambrure</th>
+                        <th scope="row">heelWidth</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <label type="text" value="cm" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label scope="row" for="cm">cm</label>
+                        </td>
+                        <td>
+                            <input step="0.1" type="number" class="search" id="shoeLong" data-pond="2">
+                        </td>
+                        <td>
+                            <input step="0.1" type="number" class="search" id="shoeWidth" data-pond="2">
+                        </td>
+                        <td>
+                            <input step="0.1" type="number" class="search" id="flankLineTurn" data-pond="2">
+                        </td>
+                        <td>
+                            <input step="0.1" type="number" class="search" id="kickTurn" data-pond="2">
+                        </td>
+                        <td>
+                            <input step="0.1" type="number" class="search" id="entry" data-pond="2">
+                        </td>
+                        <td>
+                            <input step="0.1" type="number" class="search" id="height_10" data-pond="2">
+                        </td>
+                        <td>
+                            <input step="0.1" type="number" class="search" id="Cambrure" data-pond="2">
+                        </td>
+                        <td>
+                            <input step="0.1" type="number" class="search" id="heelWidth" data-pond="2">
+                        </td>
+                    </tr>
+                    <tr class="wrapper__input">
+                        <td colspan="9">
+                            <input class="submit btn btn-primary btn-lg btn-block" type="submit">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script>
+    var urlEntry = "http://192.168.1.70:3000/api/v1/entry";
+    var urlSuggests = "http://192.168.1.70:3000/api/v1/suggests";
+    var form = {
+
+        search: function() {
+
+            if ($('.result')) {
+
+                $('.result').remove()
+            }
+
+            var el = document.getElementsByClassName('search'),
+                obj = {
+                    ref: "ref",
+                    search: {}
+                };
+
+            for (var i = 0; i < el.length; i++) {
+                var current = el[i];
+                obj.search[current.getAttribute('id')] = {
+                    value: parseFloat(current.value),
+                    pond: parseInt(current.getAttribute('data-pond'))
+                };
+            }
 
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+            $.ajax({
+                url: urlSuggests,
+                type: 'GET',
+                data: obj,
+                success: function(data) {
 
+                    form.display(data);
 
-<script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
+                },
+                error: function(data) {
 
-<script>
-
-var form = {
-
-	get : function(){
-
-			 $.ajax({
-                        url: "http://192.168.1.70:3000/api/v1/suggests",
-                        type: 'GET',
-                        success: function(data) {
-
-                         console.log(data, 'data');
-                         form.display(data);
-                        },
-                        error: function(data) {
-
-                        }
-                    });
-	},
-
-
-	add : function(){
-
-
-		 	 $.ajax({
-                        url: "http://192.168.1.70:3000/api/v1/entry",
-                        type: 'POST',
-                        data: {
-
-                        },
-                        success: function(data) {
-                         console.log('send')
-
-                        },
-                        error: function(data) {
-
-                        }
-                    });
+                }
+            });
 
 
 
 
-	},
+        },
 
-	display : function(data){
+        display: function(data) {
 
-		console.log('data', data);
+            console.log('data', data);
+
+
+            for (var key in data.result) {
 
 
 
-		    for (var key in data.result) {
+                $('.wrapper__input').before("<tr class=' result bg-success' id='" + data.result[key].doc._id + "'></tr>");
 
-		    	console.log(data.result[key], 'value');
+                $("#" + data.result[key].doc._id).append("<td scope='row' >" + data.result[key].doc.user + " <small>" + data.result[key].diff + "</small></td>")
 
-             /*   for (var memberKey in json.table[key].member) {
 
-                    var table = json.table[key].number;
-                    this.CreateTable(json.table[key]);
-                    if (json.table[key].member[memberKey].nom) {
-                        var users = json.table[key].member[memberKey].nom;
-                        var userId = json.table[key].member[memberKey].id;
-                        this.pushUsersToTab(users, table, userId)
+                for (var docKey in data.result[key].doc) {
+
+                    if (docKey !== '_id') {
+
+                        $("#" + data.result[key].doc._id).append("<td>" + data.result[key].doc[docKey] + "</td>")
+                        console.log(docKey, 'docname')
                     }
-                }*/
+
+
+
+                    if (docKey == 'heelWidth') {
+                        break;
+                    }
+
+
+
+
+
+
+                }
 
             }
 
 
-	}
 
-}
+        }
 
 
-form.get();
 
-</script>
+    }
 
+
+    /*form.get();*/
+    $('.submit').click(function() {
+        form.search();
+    });
+    </script>
 </body>
 
 </html>

@@ -38,7 +38,7 @@
       display : function(data){
         for (var key in data.result) {
           for (var item in data.result[key].doc) {
-            $('#res td').text(item);
+            $('#res td').text(data.result[key].doc[item]);
             console.log(item, '=', data.result[key].doc[item]);
           }
         }
