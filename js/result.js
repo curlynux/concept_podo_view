@@ -36,13 +36,11 @@
       },
 
       display : function(data){
-        var valeur = data.result
-        for (var key in valeur) {
-          for (var item in valeur[key].doc) {
-            console.log(item, '=', valeur[key].doc[item]);
-
-            $('#res td').text(valeur[key].doc[item]);
-            // console.log(td);
+        for (var key in data.result) {
+          for (var item in data.result[key].doc) {
+            $('#res td').attr("id", "nth")
+            $("#nth").text(data.result[key].doc[item]);
+            console.log(item, '=', data.result[key].doc[item]);
           }
         }
       }
