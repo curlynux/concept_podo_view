@@ -38,8 +38,7 @@
       display : function(data){
         for (var key in data.result) {
           for (var item in data.result[key].doc) {
-            $('#res td').attr("id", "nth")
-            $("#nth").text(data.result[key].doc[item]);
+            $('#res td').text(item);
             console.log(item, '=', data.result[key].doc[item]);
           }
         }
